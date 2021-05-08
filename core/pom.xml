@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>tech.tablesaw</groupId>
+        <groupId>tech.tablesaw.orquest</groupId>
         <artifactId>tablesaw-parent</artifactId>
         <version>0.38.5-SNAPSHOT</version>
     </parent>

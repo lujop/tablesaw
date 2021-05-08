@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>tech.tablesaw</groupId>
+    <groupId>tech.tablesaw.orquest</groupId>
     <artifactId>tablesaw-parent</artifactId>
     <version>0.38.5-SNAPSHOT</version>
   </parent>
@@ -14,37 +14,37 @@
 
   <dependencies>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-core</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-beakerx</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-excel</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-html</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-json</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-jsplot</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>tech.tablesaw</groupId>
+      <groupId>tech.tablesaw.orquest</groupId>
       <artifactId>tablesaw-saw</artifactId>
       <version>0.38.5-SNAPSHOT</version>
     </dependency>
