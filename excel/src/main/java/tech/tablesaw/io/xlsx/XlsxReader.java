@@ -24,6 +24,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
@@ -338,7 +339,14 @@ public class XlsxReader implements DataReader<XlsxReadOptions> {
             }
             column.appendCell(val);
           } else {
-            column.appendCell(localDate.toString());
+            try {
+              column.appendCell(localDate.toString());
+            } catch (NumberFormatException | DateTimeException e) {
+              logger.warn(
+                  "Error appending date cell value {}. Ignoring it's value",
+                  localDate,
+                  e.getMessage());
+            }
           }
           return null;
         } else {
@@ -391,7 +399,7 @@ public class XlsxReader implements DataReader<XlsxReadOptions> {
                   "Error formatting cell value {} to string: {}. Ignoring it's value",
                   cell.getNumericCellValue(),
                   e.getMessage());
-              val = null;
+              val = "" + cell.getNumericCellValue();
             }
             stringColumn.append(val);
           }
